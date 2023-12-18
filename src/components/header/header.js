@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <div className="header d-flex">
             <h3>
-                <Link to="/">StarDB</Link>
+                <Link to="/">Star Wars</Link>
             </h3>
             <ul className="d-flex">
                 <li>
@@ -24,7 +24,7 @@ const Header = () => {
                     <Link to="/login">Login</Link>
                 </li>
                 <li>
-                    <Link to="/secret">Secret</Link>
+                    <Link to="/info">Info</Link>
                 </li>
             </ul>
         </div>

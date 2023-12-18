@@ -5,13 +5,13 @@ import ItemList from "../item-list"
 
 
 const renderNameAndGender = ({name, gender}) =>
-    <span>{name}, &nbsp;{gender}</span>
+    <span>{name} </span>
 
 const renderNameAndModel = ({ name, model }) =>
-    <span>{name}, &nbsp;{model}</span>
+    <span>{name}</span>
 
 const renderNameAndPopulation = ({ name, population }) =>
-    <span>{name}, &nbsp;{population} {population !== 'unknown' ? 'people' : null}</span>
+    <span>{name} </span>
 
 
 const mapPersonMethodsToProps = (swapiService) => {

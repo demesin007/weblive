@@ -1,0 +1,32 @@
+/* info-page.css */
+
+.info-container {
+    max-width: 1000px;
+    margin: 0;
+    padding: 20px;
+    display: flex; /* Use flexbox to create a horizontal layout */
+    left: 60px;
+}
+
+.info-content {
+    display: flex;
+}
+
+.info-item-photo img {
+    width: 500px; /* Set the width for the photo */
+    height: 500px;
+    border-radius: 8px;
+    margin-right: 20px; /* Add margin to create space between the image and text */
+}
+
+.info-item {
+    margin: 20px; /* Add margin to create space around the item */
+    width: 500px;
+    height: 500px;
+}
+
+
+/* Increase font size of labels */
+.info-item p {
+    font-size: 25px; /* Adjust the font size as needed */
+}

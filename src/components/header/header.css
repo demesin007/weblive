@@ -7,6 +7,9 @@
 .header ul {
     margin: auto 0;
 }
+.d-flex{
+     background: darkslategrey;
+}
 
 .header ul li {
     list-style: none;
@@ -17,7 +20,7 @@
 }
 
 .header ul li:hover {
-    background-color: #444;
+    background-color: #444;;
 }
 
 .header a:hover {

@@ -1,31 +1,38 @@
-import React from "react"
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./login-page.css";
 
-const LoginPage = ({ isLoggedIn, onLogin }) => {
+const LoginPage = ({ onLogin }) => {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
 
-    const content = (isLoggedIn) => {
-        if (isLoggedIn)
-            return (
-                <React.Fragment>
-                    <h5 align="center">You can see a secret page!!! Do it as quickly as possible!!!</h5>
-                </React.Fragment>
-            )
-
-        return (
-            <React.Fragment>
-                <h5>Login to see secret page!!!</h5>
-                <br/>
-                <button className="btn btn-primary" onClick={onLogin}>
-                    Login
-                </button>
-            </React.Fragment>
-        )
-    }
+    const handleLogin = () => {
+        // Add your login logic here
+        // For simplicity, just check if both username and password are not empty
+        if (username.trim() !== "" && password.trim() !== "") {
+            onLogin(username);
+        }
+    };
 
     return (
-        <div className="jumbotron">
-            { content(isLoggedIn) }
-        </div>
-    )
-}
+        <div className="login-container">
+            <h2>Login</h2>
+            <label>
+                Username:
+                <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+            </label>
+            <label>
+                Password:
+                <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            </label>
+            <button onClick={handleLogin}>Login</button>
 
-export default LoginPage
+            {/* Add a link to the RegisterPage */}
+            <p>
+                Don't have an account? <Link to="/register">Register</Link>
+            </p>
+        </div>
+    );
+};
+
+export default LoginPage;
