@@ -6,11 +6,11 @@ import { withSwapiService } from '../hoc-helpers'
 const PlanetDetails = (props) => {
     return (
         <ItemDetails {...props}>
-            <Record field="population" label="Population" />
-            <Record field="rotationPeriod" label="Rotation Period" />
-            <Record field="diameter" label="Diameter" />
-            <Record field="climate" label="Climate" />
-            <Record field="terrain" label="Terrain" />
+            <Record field="population" label="Xalyq" />
+            <Record field="rotationPeriod" label="Aynalu kezeñi" />
+            <Record field="diameter" label="Dïametri" />
+            <Record field="climate" label="Klïmat" />
+            <Record field="terrain" label="Jer bederi" />
         </ItemDetails>
     )
 }

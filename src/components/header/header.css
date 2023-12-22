@@ -2,13 +2,24 @@
     margin-top: .5rem;
     padding-left: 10px;
     margin-bottom: 1rem;
+    .header d-flex{
+        background: firebrick;
+    }
+
+
 }
+.logo-img {
+    width: 60px;
+    height: 60px;
+ }
 
 .header ul {
     margin: auto 0;
+
 }
 .d-flex{
-     background: darkslategrey;
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 .header ul li {
@@ -17,11 +28,10 @@
     padding: .5rem 1rem;
     border-radius: 3px;
     font-size: 1.1rem;
+
 }
 
-.header ul li:hover {
-    background-color: #444;;
-}
+
 
 .header a:hover {
     text-decoration: none;
@@ -33,5 +43,38 @@
 }
 
 .header h3 a:hover {
-    color: #00bc8c;
+    color: white;
 }
+.head ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 10px 10px 10px 300%;
+}
+
+
+
+.login-register {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item.dropdown .dropdown-item {
+    color: #00bc8c;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+

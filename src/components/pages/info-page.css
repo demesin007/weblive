@@ -1,32 +1,40 @@
-/* info-page.css */
-
 .info-container {
     max-width: 1000px;
     margin: 0;
     padding: 20px;
-    display: flex; /* Use flexbox to create a horizontal layout */
-    left: 60px;
+    display: flex;
 }
 
 .info-content {
     display: flex;
 }
 
+
+.info-item table {
+    width: 10%;
+    height: 1%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.info-item td {
+    padding: 41px;
+    border: 2px solid #ddd;
+    font-size: 25px;
+}
+
+
 .info-item-photo img {
-    width: 500px; /* Set the width for the photo */
+    width: 500px;
     height: 500px;
     border-radius: 8px;
-    margin-right: 20px; /* Add margin to create space between the image and text */
+    margin-right: 20px;
 }
 
 .info-item {
-    margin: 20px; /* Add margin to create space around the item */
-    width: 500px;
-    height: 500px;
-}
+    margin: 20px;
+    width: 550px;
+    height: 488px;
 
-
-/* Increase font size of labels */
-.info-item p {
-    font-size: 25px; /* Adjust the font size as needed */
+    background-color: rgba(0, 0, 0, 0.5);
 }

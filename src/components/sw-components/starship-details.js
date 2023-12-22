@@ -6,11 +6,11 @@ import { withSwapiService } from '../hoc-helpers'
 const StarshipDetails = (props) => {
     return (
         <ItemDetails {...props}>
-            <Record field="model" label="Model" />
-            <Record field="length" label="Length" />
-            <Record field="costInCredits" label="Cost" />
-            <Record field="manufacturer" label="Manufacturer" />
-            <Record field="passengers" label="Passengers" />
+            <Record field="model" label="Ülgi" />
+            <Record field="length" label="Uzyndığı" />
+            <Record field="costInCredits" label="Quny" />
+            <Record field="manufacturer" label="Öndiruşi" />
+            <Record field="passengers" label="Jolauşylar" />
         </ItemDetails>
     )
 }

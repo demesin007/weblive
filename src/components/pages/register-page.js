@@ -9,8 +9,7 @@ const RegisterPage = ({ onRegister }) => {
     const [password, setPassword] = useState("");
 
     const handleRegister = () => {
-        // Add your registration logic here
-        // For simplicity, just check if all fields are not empty
+
         if (
             firstName.trim() !== "" &&
             lastName.trim() !== "" &&
@@ -18,7 +17,7 @@ const RegisterPage = ({ onRegister }) => {
             username.trim() !== "" &&
             password.trim() !== ""
         ) {
-            // Assuming you want to pass more information to onRegister
+
             onRegister({
                 firstName,
                 lastName,
@@ -31,9 +30,9 @@ const RegisterPage = ({ onRegister }) => {
 
     return (
         <div className="register-container">
-            <h2>Register</h2>
+            <h2>Tirkelu</h2>
             <label>
-                First Name:
+                Aty:
                 <input
                     type="text"
                     value={firstName}
@@ -41,7 +40,7 @@ const RegisterPage = ({ onRegister }) => {
                 />
             </label>
             <label>
-                Last Name:
+                Tegi:
                 <input
                     type="text"
                     value={lastName}
@@ -49,7 +48,7 @@ const RegisterPage = ({ onRegister }) => {
                 />
             </label>
             <label>
-                Account Number:
+                Nomer:
                 <input
                     type="text"
                     value={accountNumber}
@@ -57,7 +56,7 @@ const RegisterPage = ({ onRegister }) => {
                 />
             </label>
             <label>
-                Username:
+                Paydalanuşı aty:
                 <input
                     type="text"
                     value={username}
@@ -65,14 +64,14 @@ const RegisterPage = ({ onRegister }) => {
                 />
             </label>
             <label>
-                Password:
+                Qupïya söz:
                 <input
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
             </label>
-            <button onClick={handleRegister}>Register</button>
+            <button onClick={handleRegister}>Tirkelu</button>
         </div>
     );
 };

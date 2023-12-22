@@ -16,20 +16,20 @@ const LoginPage = ({ onLogin }) => {
 
     return (
         <div className="login-container">
-            <h2>Login</h2>
+            <h2>Kiru</h2>
             <label>
-                Username:
+                Paydalanuşı aty:
                 <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
             </label>
             <label>
-                Password:
+                Qupïya söz:
                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
             </label>
-            <button onClick={handleLogin}>Login</button>
+            <button onClick={handleLogin}>Kiru</button>
 
             {/* Add a link to the RegisterPage */}
             <p>
-                Don't have an account? <Link to="/register">Register</Link>
+                Tirkelmegensiz be? <Link to="/register">Tirkelu</Link>
             </p>
         </div>
     );

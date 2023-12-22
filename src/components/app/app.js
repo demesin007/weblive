@@ -4,7 +4,7 @@ import './app.css';
 import { ErrorIndicator, NotFoundIndicator } from '../errors';
 import ErrorBoundary from '../error-boundry';
 import InfoPage from '../pages/info-page';
-import RegisterPage from '../pages/register-page';  // Import RegisterPage
+import RegisterPage from '../pages/register-page';
 import { SwapiServiceProvider } from '../swapi-service-context';
 import SwapiService from '../../services/swapi-service';
 import {
@@ -73,7 +73,7 @@ export default class App extends Component {
                                 />
                                 <Route
                                     path="/register"
-                                    component={RegisterPage}  // Route for RegisterPage
+                                    component={RegisterPage}
                                     exact
                                 />
                                 <Route

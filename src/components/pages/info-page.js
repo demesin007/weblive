@@ -1,6 +1,6 @@
 import React from "react";
 import './info-page.css';
-import intro from './IMG_20230402_201546_267.jpg'; // Use a relative import
+import intro from './IMG_20230402_201546_267.jpg';
 
 const InfoPage = () => {
     return (
@@ -10,11 +10,26 @@ const InfoPage = () => {
                     <img src={intro} alt="intro"/>
                 </div>
                 <div className="info-item">
-                    <p><strong>Name:</strong> Nurkanat</p>
-                    <p><strong>Surname:</strong> Demessin</p>
-                    <p><strong>Number:</strong> 87054568425</p>
-                    <p><strong>Email:</strong> demessin007@gmail.com</p>
-
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Name:</td>
+                            <td>Nurkanat</td>
+                        </tr>
+                        <tr>
+                            <td>Surname:</td>
+                            <td>Demessin</td>
+                        </tr>
+                        <tr>
+                            <td>Number:</td>
+                            <td>87054568425</td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td>demessin007@gmail.com</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
